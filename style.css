@@ -1,0 +1,97 @@
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.background {
+	background-color:Black;
+	}
+
+.all-windows {
+	display: flex;
+	height: 100vh;
+	gap: 20px;
+}
+
+.left {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.top-left {
+	flex: 0 0 40%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+	gap: 2px;
+}
+
+.bar-top-left {
+	flex: 0 0 7.5%;
+	background-color: black;
+	box-sizing: border-box;
+}
+
+.window-top-left {
+	flex: 1;
+	background-image: url("images/pattern.png");
+	background-size: 370px 370px;
+}
+
+.bottom-left {
+	flex: 1;
+	background-image: url("images/pattern.png");
+	background-size: 370px 370px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+}
+
+
+.middle {
+	padding: 10;
+	width: 60%;
+	height: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+	gap: 2px;
+}
+
+.bar-middle {
+	flex: 0 0 3%;
+	background-color: black;
+	box-sizing: border-box;
+}
+
+.window-middle {
+	flex: 1;
+	background-image: url("images/pattern.png");
+	background-size: 370px 370px;
+}
+
+.right {
+	width: 20%;
+	height: 100%;
+	background-image: url("images/pattern.png");
+	background-size: 370px 370px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+}
+
