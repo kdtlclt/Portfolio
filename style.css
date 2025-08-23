@@ -55,8 +55,9 @@ body {
 
 .bottom-left {
 	flex: 1;
-	background-image: url("images/pattern.png");
-	background-size: 370px 370px;
+	background-image: url("images/pattern2.png");
+	animation: moveBackground2 5s linear infinite;
+	background-size: 200px 200px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -126,8 +127,74 @@ body {
   to {background-position: 0 370px;}
 }
 
+@keyframes moveBackground2 {
+  from {background-position: 0 0;}
+  to {background-position: 200px 0;}
+}
+
 .bar-img {
 	width: 170px;
 	height: auto;
 	
 }
+
+.bubble {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.kdt_float {
+	width: 45%;
+	height: auto;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+	50% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.bubble-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+    .bubble-text-main {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px;
+	  font-family: "Salsa";
+      color: black;
+      text-align: center;
+      padding: 0 10px;
+      width: 90%
+    }
+
+	    .bubble-text-sub {
+      position: absolute;
+      top: 32%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 15px;
+	  font-family: "Salsa";
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 0 10px;
+      width: 90%
+    }
