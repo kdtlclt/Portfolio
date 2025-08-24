@@ -103,7 +103,7 @@ body {
 	background-size: 370px 370px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	place-items: center;   
+	place-items: center; 
 	padding: 7%;
 }
 
