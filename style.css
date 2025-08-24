@@ -7,7 +7,13 @@ body {
 
 .background {
 	background-color:black;
-	}
+}
+
+.background-lines {
+	background-image: url("images/pattern2.png");
+	animation: moveBackground2 5s linear infinite;
+	background-size: 200px 200px;
+}
 
 .all-windows {
 	display: flex;
@@ -41,6 +47,7 @@ body {
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .window-top-left {
@@ -76,14 +83,17 @@ body {
 	-webkit-box-sizing: border-box;
 	border: 2px solid white;
 	gap: 2px;
+	margin: 0 auto;
 }
 
-.bar-middle {
+.bar {
 	flex: 0 0 3%;
 	background-color: black;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .window-middle {
@@ -91,17 +101,73 @@ body {
 	background-image: url("images/pattern.png");
 	animation: moveBackground 20s linear infinite;
 	background-size: 370px 370px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;   
+	padding: 7%;
+}
+
+.window-middle-artgallery {
+	flex: 1;
+	background-image: url("images/pattern.png");
+	animation: moveBackground 20s linear infinite;
+	background-size: 370px 370px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;   
+	padding: 20%;
+	position: relative;
+}
+
+.floating-text {
+	  position: absolute;
+	  top: 15%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  font-size: 25px;
+	  font-family: "Salsa";
+	  color: white;
+	  text-align: center;
+	  padding: 0 10px;
+	  width: 90%
+}
+
+.home-icon img {
+	margin: 0;
+	padding: 0;
+	width: 250px;
+	height: auto;
+	transition: transform 0.2s;
+}
+
+.home-icon img:hover {
+  transform: scale(1.1) rotate(-10deg);
+  cursor: pointer;
 }
 
 .right {
 	width: 20%;
 	height: 100%;
-	background-image: url("images/pattern.png");
-	background-size: 370px 370px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	border: 2px solid white;
+	gap: 2px;
+}
+
+.window-right {
+	flex: 1;
+	background-image: url("images/pattern2.png");
+	animation: moveBackground2 5s linear infinite;
+	background-size: 200px 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
 }
 
 .linkbutton {
@@ -135,7 +201,14 @@ body {
 .bar-img {
 	width: 170px;
 	height: auto;
-	
+	margin: 0;
+}
+
+.bar-menu {
+	width: 170px;
+	height: auto;
+	float: right;
+	margin: 0;
 }
 
 .bubble {
@@ -147,7 +220,7 @@ body {
 }
 
 .kdt_float {
-	width: 45%;
+	width: 205px;
 	height: auto;
 	display: block;
   	margin-left: auto;
@@ -173,28 +246,57 @@ body {
   height: auto;
 }
 
-    .bubble-text-main {
-      position: absolute;
-      top: 15%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 25px;
-	  font-family: "Salsa";
-      color: black;
-      text-align: center;
-      padding: 0 10px;
-      width: 90%
-    }
+.bubble-text-main {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: "Salsa";
+  color: black;
+  text-align: center;
+  padding: 0 10px;
+  width: 90%
+}
 
-	    .bubble-text-sub {
-      position: absolute;
-      top: 32%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 15px;
-	  font-family: "Salsa";
-      color: rgb(0, 0, 0);
-      text-align: center;
-      padding: 0 10px;
-      width: 90%
-    }
+.bubble-text-sub {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-family: "Salsa";
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 0 10px;
+  width: 90%
+}
+
+.ad img {
+	width: 260px;
+	height: auto;
+	transition: transform 0.2s;
+}
+
+.ad img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.back-button {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	z-index: 999;
+}
+
+.back-button img {
+  width: 20%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.back-button:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
