@@ -15,6 +15,23 @@ body {
 	background-size: 200px 200px;
 }
 
+.background-pens {
+	background-image: url("images/pattern3.png");
+	animation: moveBackground2 5s linear infinite;
+	background-size: 200px 200px;
+}
+
+.background-cameras {
+	background-image: url("images/pattern4.png");
+	animation: moveBackground2 5s linear infinite;
+	background-size: 200px 200px;
+}
+
+.background-brickwall {
+	background-image: url("images/pattern5.png");
+	background-size: 200px 200px;
+}
+
 .all-windows {
 	display: flex;
 	height: 100vh;
@@ -74,7 +91,8 @@ body {
 
 .middle {
 	width: 60%;
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -117,6 +135,43 @@ body {
 	place-items: center;   
 	padding: 20%;
 	position: relative;
+}
+
+.grid-section {
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 30%;
+	padding: 30px;
+}
+
+.grid-section h2 {
+  color: white;
+  font-family: "Salsa";
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid white;
+  filter: grayscale(100%) brightness(80%);
+}
+
+.grid-container img:hover {
+	filter: grayscale(0%) brightness(100%);
 }
 
 .floating-text {
@@ -291,7 +346,7 @@ body {
 }
 
 .back-button img {
-  width: 20%;
+  width: 100px;
   height: auto;
   transition: transform 0.2s ease;
 }
@@ -299,4 +354,67 @@ body {
 .back-button:hover img {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+.art-showcase {
+	width: auto;
+	height: 700px;
+}
+
+.divider {
+	width: 300px;
+	height: auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 20px;
+}
+
+.board-container {
+	position: relative;
+	width: 1200px;
+	height: auto;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+
+.board-bg,
+.board-strings {
+	width: 100%;
+	display: block;
+}
+
+.board-strings {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	pointer-events: none;
+	z-index: 5;
+}
+
+.board-piece {
+	position: absolute;
+	display: block;
+	z-index: 2;
+}
+
+.board-piece img {
+	transition: transform 0.2s;
+}
+
+.board-piece:hover img {
+	cursor: pointer;
+	filter: drop-shadow(7px 6px 0 rgba(0, 0, 0, 0.5));
+	transform: scale(1.05);
+}
+
+.board-piece:hover{
+	z-index: 6;
+}
+
+.polaroid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
