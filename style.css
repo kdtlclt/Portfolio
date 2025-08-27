@@ -575,11 +575,19 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+.nomobile-gif {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .enter-button {
 	position: absolute;
 	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	z-index: 99;
 }
 
 .enter-button img {
@@ -591,4 +599,5 @@ body {
 
 .enter-button img:hover {
 	border: 3px solid white;
+	z-index: 1;
 }
