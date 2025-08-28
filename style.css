@@ -44,6 +44,11 @@ body {
 	background-size: 200px 200px;
 }
 
+.background-brain {
+	background-image: url(images/patternbrain.png);
+	background-size: 500px 500px;
+}
+
 .all-windows {
 	display: flex;
 	height: 100vh;
@@ -147,6 +152,63 @@ body {
 	place-items: center;   
 	padding: 20%;
 	position: relative;
+}
+
+.window-middle-brainarchive {
+	flex: 1;
+	background-image: url("images/pattern.png");
+	animation: moveBackground 20s linear infinite;
+	background-size: 370px 370px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;   
+	padding: 20%;
+	position: relative;
+}
+
+.thought-grid {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	column-gap: 100px;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.thought-text img {
+	width: auto;
+	max-width: 300px;
+	height: auto;
+	display: block;
+	transition: transform 0.2s;
+}
+
+.thought-text img:hover {
+	transform: scale(1.3);
+}
+
+.thought-text a {
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+}
+
+.thought-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: "Salsa";
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	max-width: 200px;
+	margin: 0 auto;
+	text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.brain-container {
+	padding-top: 350px;
 }
 
 .grid-section {
@@ -459,11 +521,6 @@ body {
 	font-family: "Caveat";
 }
 
-.paper-wrapper-about-me {
-	position: relative;
-	width: 1000px;
-}
-
 .paper-wrapper-2 {
 	position: relative;
 	width: 1000px;
@@ -516,7 +573,20 @@ body {
 	font-size: 18px;
 	line-height: 1;
 	font-family: "Special Elite";
-	
+}
+
+.brain-content {
+	position: absolute;
+	top: 18%;
+	bottom: 12%;
+	left: 25%;
+	right: 25%;
+	padding: 20px;
+	overflow: auto;
+	font-size: 20px;
+	line-height: 1;
+	font-family: "Salsa";
+	color: #622f41;
 }
 
 .paper-content-3 ul {
