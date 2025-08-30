@@ -589,6 +589,11 @@ body {
 	color: #622f41;
 }
 
+.brain-content img {
+	width: 100%;
+	height: auto;
+}
+
 .paper-content-3 ul {
 	line-height: 1.3;
 }
