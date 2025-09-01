@@ -45,7 +45,7 @@ body {
 }
 
 .background-brain {
-	background-image: url(images/patternbrain.png);
+	background-image: url("images/patternbrain.png");
 	background-size: 500px 500px;
 }
 
@@ -154,6 +154,25 @@ body {
 	position: relative;
 }
 
+.window-middle-grove {
+	flex: 1;
+	background-image:
+		url("grove/treeimages/ground.png"),
+		url("grove/treeimages/skypattern.png"),
+		url("grove/treeimages/treebg2.png");
+	background-size:
+		cover,
+		370px 370px,
+		cover;
+	background-position: center; 
+	animation: movesky 20s linear infinite;
+	padding-top: 15%;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	position: relative;
+}
+
 .window-middle-brainarchive {
 	flex: 1;
 	background-image: url("images/pattern.png");
@@ -180,6 +199,7 @@ body {
 	height: auto;
 	display: block;
 	transition: transform 0.2s;
+	margin: 0 auto;
 }
 
 .thought-text img:hover {
@@ -274,7 +294,7 @@ body {
   cursor: pointer;
 }
 
-.right {
+.verticalwindow {
 	width: 20%;
 	height: 100%;
 	background-color: white;
@@ -287,7 +307,7 @@ body {
 	gap: 2px;
 }
 
-.window-right {
+.window-contentvertical {
 	flex: 1;
 	background-image: url("images/pattern2.png");
 	animation: moveBackground2 5s linear infinite;
@@ -297,6 +317,89 @@ body {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+}
+
+.right-homepage {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.top-right {
+	flex: 0 0 60%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+	gap: 2px;
+}
+
+.bar-top-right {
+	flex: 0 0 5%;
+	background-color: black;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.window-top-right {
+	flex: 1;
+	background-image: url("images/pattern2.png");
+	animation: moveBackground2 5s linear infinite;
+	background-size: 200px 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.bottom-right {
+	flex: 1;
+	background-image: url("images/pattern.png");
+	animation: moveBackground 20s linear infinite;
+	background-size: 370px 370px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.window-right-grove {
+	flex: 1;
+	overflow-y: auto;
+	background-image: 
+		url("grove/treeimages/sign.png"),
+		url("grove/treeimages/skypattern.png"),
+		url("grove/treeimages/treebg2.png");
+	background-size:
+		contain,
+		370px 370px,
+		cover;
+	background-position: center;
+	animation: movesky 20s linear infinite;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	scrollbar-width: none; 
+	-ms-overflow-style: none;   
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior: none;
+}
+
+.window-right-grove::-webkit-scrollbar {
+  display: none;
 }
 
 .linkbutton {
@@ -325,6 +428,21 @@ body {
 @keyframes moveBackground2 {
 	from {background-position: 0 0;}
 	to {background-position: 200px 0;}
+}
+
+@keyframes movesky {
+	from {
+		background-position:
+		center,
+		0 0,
+		center;
+	}
+	to {
+		background-position: 
+		center,
+		0 370px,
+		center;
+	}
 }
 
 .bar-img {
@@ -636,6 +754,14 @@ body {
 	text-decoration: underline;
 }
 
+.grovewelcome-gif {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
 .welcome-gif {
 	position: absolute;
 	top: 15%;
@@ -675,4 +801,61 @@ body {
 .enter-button img:hover {
 	border: 3px solid white;
 	z-index: 1;
+}
+
+.fruit {
+	position: absolute;
+	display: block;
+	z-index: 2;
+	transform: translate(-50%, -50%);
+}
+
+.fruit img {
+	transition: transform 0.2s;
+	width: 80px;
+	height: auto;
+}
+
+.fruit:hover img {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.tree-container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.tree-img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.signtitle {
+	transition: transform 0.2s;
+	width: 100%;
+}
+
+.signtitle:hover {
+	transform: scale(1.1);
+}
+
+.bush2 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 40%;
+}
+
+.bush1 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 40%;
+}
+
+.hidden-sign {
+  margin-top: 100vh;
 }
