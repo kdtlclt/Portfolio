@@ -467,7 +467,7 @@ body {
 }
 
 .kdt_float {
-	width: 205px;
+	width: 47%;
 	height: auto;
 	display: block;
   	margin-left: auto;
@@ -564,9 +564,9 @@ body {
 
 .board-container {
 	position: relative;
-	width: 1200px;
+	width: 1150px;
 	height: auto;
-	padding-top: 100px;
+	padding-top: 70px;
 	margin: 0 auto;
 }
 
@@ -628,7 +628,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	height: 100vh;
+}
+
+.polaroid img {
+	height: 900px;
 }
 
 .board-piece-big {
@@ -650,19 +654,25 @@ body {
 }
 
 .paper-bg {
-	width: 100%;
+	width: 95%;
 	display: block;
+}
+
+.paper-bg-2 {
+	width: 95%;
+	display: block;
+	padding-left: 2%;
 }
 
 .paper-content {
 	position: absolute;
 	top: 5%;
 	bottom: 5%;
-	left: 20%;
-	right: 25%;
+	left: 18%;
+	right: 29%;
 	padding: 20px;
 	overflow: auto;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 0.5;
 }
 
@@ -835,7 +845,7 @@ body {
 
 .signtitle {
 	transition: transform 0.2s;
-	width: 100%;
+	width: 95%;
 }
 
 .signtitle:hover {
