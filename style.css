@@ -21,6 +21,12 @@ body {
 	background-size: 200px 200px;
 }
 
+.background-lines-blue {
+	background-image: url("images/pattern6.png");
+	animation: moveBackgroundblue 15s linear infinite;
+	background-size: 500px 500px;
+}
+
 .background-pipes {
 	background-image: url("images/factorypattern.png");
 	background-size: 500px 500px;
@@ -46,6 +52,12 @@ body {
 .background-brain {
 	background-image: url("images/patternbrain.png");
 	background-size: 500px 500px;
+}
+
+.background-grid {
+	background-image: url("factory/danstrouble/gridback.png");
+	animation: moveBackgroundGrid 2s linear infinite;
+	background-size: 20px 20px;
 }
 
 .all-windows {
@@ -241,7 +253,7 @@ body {
 
 .project-grid {
 	display: grid;
-	grid-template-columns: repeat(1, auto); /*Update the number whenever new things get added*/
+	grid-template-columns: repeat(2, auto); /*Update the number whenever new things get added*/
 	column-gap: 50px;
 	justify-content: center;
 	position: relative;
@@ -450,6 +462,16 @@ body {
 @keyframes moveBackground2 {
 	from {background-position: 0 0;}
 	to {background-position: 200px 0;}
+}
+
+@keyframes moveBackgroundblue {
+	from {background-position: 0 0;}
+	to {background-position: 500px 0;}
+}
+
+@keyframes moveBackgroundGrid {
+	from {background-position: 0 0;}
+	to {background-position: 20px 20px;}
 }
 
 @keyframes movesky {
@@ -854,6 +876,11 @@ body {
 	height: auto;
 }
 
+.fruit:hover {
+	z-index: 3
+}
+
+
 .fruit:hover img {
 	cursor: pointer;
 	transform: scale(1.2);
@@ -910,4 +937,126 @@ body {
 
 .hidden-sign {
   margin-top: 100vh;
+}
+
+.hovering {
+	border: 3px solid transparent;
+	transition: border-color 0.2s;
+}
+
+.hovering:hover {
+	cursor: pointer;
+	border-color: white;
+}
+
+.page-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+}
+
+.transcript {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+	width: 80%;
+}
+
+.page-wrapper:hover .transcript {
+	opacity: 1;
+}
+
+.choice-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.choice {
+	background: black;
+	color: white;
+	padding: 15px 25px;
+	border-radius: 8px;
+	transition: transform 0.2s;
+	text-decoration: none;
+}
+
+.choice:hover {
+	transform: scale(1.05);
+}
+
+.kiosk-container {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: min(125vh, 100vw);
+	aspect-ratio: 4 / 3; /* or your kiosk art ratio */
+}
+
+.kiosk {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.kiosk-kdt {
+	position: absolute;
+	top: 48.2%;
+	left: 54%;
+	width: 18%;
+	z-index: 2;
+}
+
+.kiosk-bubble {
+	position: absolute;
+	top: 4%;
+	left: 65%;
+	width: 30%;
+	z-index: 4;
+}
+
+.kiosk-bubble-container {
+	position: absolute;
+	top: 6%;
+	left: 66.5%;
+	width: 27%;
+	height: 41%;
+	z-index: 5;
+	overflow: hidden;
+	border: none;
+
+}
+
+.kiosk-object {
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+	transition: transform 0.15s ease, filter 0.05s ease;;
+	transform-origin: bottom;
+}
+
+.kiosk-object:hover {
+	transform: scale(1.2);
+	filter:
+		drop-shadow(2px 0 0 white)
+		drop-shadow(-2px 0 0 white)
+		drop-shadow(0 2px 0 white)
+		drop-shadow(0 -2px 0 white);
+}
+
+.kiosk-speech {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: "Salsa";
+	color: black;
 }
