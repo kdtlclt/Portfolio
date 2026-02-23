@@ -157,6 +157,7 @@ body {
 	place-items: center; 
 	padding: 7%;
 	position: relative;
+	overflow: auto;
 }
 
 .window-middle-grove {
@@ -192,7 +193,7 @@ body {
 
 .window-middle-factory {
 	flex: 1;
-	background-image: url("images/pattern.png");
+	background-image: url("images/factorypattern.png");
 	animation: moveBackground 20s linear infinite;
 	background-size: 370px 370px;
 	place-items: center; 
@@ -349,6 +350,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+	overflow: hidden;
+	position: relative;
 }
 
 .right-homepage {
@@ -360,7 +363,7 @@ body {
 }
 
 .top-right {
-	flex: 0 0 60%;
+	flex: 0 0 50%;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -369,6 +372,7 @@ body {
 	-webkit-box-sizing: border-box;
 	border: 2px solid white;
 	gap: 2px;
+	position: relative;
 }
 
 .bar-top-right {
@@ -390,6 +394,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
+	overflow: auto;
+	position: relative;
 }
 
 .bottom-right {
@@ -407,6 +413,63 @@ body {
 	overflow: auto;
 
 	
+}
+
+.vertical-divide {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.top-vert {
+	flex: 0 0 65%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+	gap: 2px;
+}
+
+.bar-top-vert {
+	flex: 0 0 5%;
+	background-color: black;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.window-top-vert {
+	flex: 1;
+	background-image: url("images/pattern2.png");
+	animation: moveBackground2 5s linear infinite;
+	background-size: 200px 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	position: relative;
+}
+
+.bottom-vert {
+	flex: 1;
+	background-image: url("images/pattern.png");
+	animation: moveBackground 20s linear infinite;
+	background-size: 370px 370px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
 }
 
 .window-right-grove {
@@ -561,6 +624,19 @@ body {
 	text-align: center;
 	padding: 0 10px;
 	width: 90%
+}
+
+.changelog-txt {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 4%;
+  right: 4%;
+
+	font-size: 17px;
+	font-family: "Salsa";
+	color: white;
+
 }
 
 .ad img {
@@ -1059,4 +1135,232 @@ body {
 	font-size: 18px;
 	font-family: "Salsa";
 	color: black;
+}
+
+.radio-container {
+	position: relative;
+	width: 350px;
+	height: 263px;
+}
+
+.radio {
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.radio-content {
+	position: absolute;
+	top: 75px;
+	right: 23px;
+	width: 175px;
+	height: 150px;
+	z-index: 1;
+}
+
+.thought-scroll {
+position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.thought-track {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	animation: scroll 20s linear infinite;
+}
+
+.thought-track p {
+	color: white;
+	font-size: 17px;
+	margin: 2px 0;
+	font-family: "Cinzel";
+}
+
+@keyframes scroll {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(-50%);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 766px) {
+	
+.all-windows {
+	flex-direction: column;
+	height: auto;
+ }
+
+.left,
+.middle,
+.right-homepage {
+	width: 100%;
+    height: auto;
+}
+  
+.window-middle {
+	grid-template-columns: repeat(1, 1fr);
+	place-items: center; 
+	padding: 5%;
+	position: relative;
+	overflow: auto;
+}
+
+.kdt_float {
+	width: 50%;
+	content: url("images/kdt_crop.png");
+	animation: none;
+}
+
+.bottom-left {
+	overflow: hidden;
+}
+
+.middle {
+    order: 1;
+}
+  
+  
+
+.left {
+    order: 2;
+}
+
+.right-homepage {
+    order: 3;
+}  
+  
+
+  
+.top-right {
+	  display: none;
+}
+
+.home-icon img {
+    width: 100%;
+  }
+  
+  .home-icon img:hover {
+  transform: scale(1.1);
+}
+
+.linkbutton img {
+	width: 100%;
+}
+
+  
+.window-middle-brainarchive {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+	min-height: 93.2vh; 
+}
+  
+
+.welcome-gif {
+	position: relative;
+    top: 0;
+    left: 0;
+	height: auto;
+	overflow: hidden;
+    transform: none;
+	max-height: 300px;
+	margin-bottom: 20px;
+}
+  
+.welcome-gif img {
+	overflow: hidden;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+ }
+  
+.back-button {
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+	z-index: 999;
+}
+
+.back-button img {
+	width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.thought-grid {
+	display: grid;
+	grid-template-columns: repeat(1, auto);
+	column-gap: 100px;
+	overflow: hidden;
+}
+
+.thought-text img {
+	width: auto;
+	max-width: 200px;
+	height: auto;
+	display: block;
+	transition: transform 0.2s;
+	margin: 0 auto;
+}
+
+.thought-text img:hover {
+	transform: scale(1.3);
+}
+
+.thought-text a {
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+}
+
+.thought-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: "Salsa";
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	max-width: 200px;
+	margin: 0 auto;
+	text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 
+	1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+
+
+
+
 }

@@ -7,11 +7,15 @@
 		rel="stylesheet">
 		<link rel="icon" type="image/png" href="../../images/favicon.png">
 		<title>MF | PERSONAL BRAIN</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	<body class="background-brain">
 		<a href="../index.html" class="back-button">
-			<img src="../../images/back.png" alt="Go Back">
+			<picture>
+				<source srcset="../../images/back_mob.png" media="(max-width: 766px)">
+				<img src="../../images/back.png" alt="Go Back">
+			</picture>
 		</a>
 		
 		<div class="brain-container">
@@ -57,9 +61,23 @@
 				</div>
 				
 				
-
+				
 				
 			</div>
+			
+			<div style="display: flex; justify-content: center;">
+				<div class="radio-container">
+					<iframe 
+						class="radio-content"
+						src="https://www.youtube-nocookie.com/embed/mR65v4fDqOc?autoplay=1&controls=0&loop=1&playlist=mR65v4fDqOc" 
+						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+					</iframe>
+					<img src="../../images/radio.gif" class="radio">
+				</div>
+			</div>
+			
+			
 		</div>
 		
 	</body>
