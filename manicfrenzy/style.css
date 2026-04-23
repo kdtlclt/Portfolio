@@ -38,6 +38,12 @@ body {
 	background-size: 200px 200px;
 }
 
+.background-brushes {
+	background-image: url("grove/treeimages/artbg.png");
+	animation: moveBackground2 5s linear infinite;
+	background-size: 200px 200px;
+}
+
 .background-brickwall {
 	background-image: url("images/pattern5.png");
 	background-size: 200px 200px;
@@ -635,8 +641,12 @@ body {
 
 	font-size: 17px;
 	font-family: "Salsa";
-	color: white;
+	color: #b3b3b3;
 
+}
+
+.changelog-txt strong {
+		color: white;
 }
 
 .ad img {
@@ -1194,6 +1204,17 @@ position: absolute;
 	}
 }
 
+.art-viewer img {
+	max-width: 50%;
+	display: block;
+	margin: auto;
+}
+
+
+
+
+
+
 
 
 
@@ -1249,11 +1270,12 @@ position: absolute;
 .right-homepage {
     order: 3;
 }  
-  
 
-  
-.top-right {
-	  display: none;
+.window-top-right {
+	min-height: 200px;
+	padding: 5%;
+	position: relative;
+	overflow: auto;
 }
 
 .home-icon img {
@@ -1269,13 +1291,17 @@ position: absolute;
 }
 
   
+  
+  
+  
+  
 .window-middle-brainarchive {
     flex: 1;
     display: flex;
     flex-direction: column;
     padding: 10px;
     position: relative;
-	min-height: 93.2vh; 
+
 }
   
 
@@ -1307,6 +1333,22 @@ position: absolute;
 .back-button img {
 	width: 200px;
 }
+
+.top-vert {
+	display: none;
+}
+
+.verticalwindow {
+	display: none;
+}
+
+.vertical-divide {
+	order: 2;
+	width: 100%;
+    height: auto;
+}
+
+
 
 
 
