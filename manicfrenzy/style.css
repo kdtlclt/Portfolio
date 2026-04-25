@@ -120,6 +120,12 @@ body {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	border: 2px solid white;
+	overflow: auto;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
 
@@ -598,7 +604,7 @@ body {
 }
 
 .kdt_float {
-	width: 47%;
+	width: 45%;
 	height: auto;
 	display: block;
   	margin-left: auto;
