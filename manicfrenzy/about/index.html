@@ -1,45 +1,102 @@
 <!DOCTYPE html>
 <!-- About Page -->
-<html>
+ <html>
 	<head>
 		<link rel="stylesheet" href="../style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Salsa&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/png" href="../images/favicon.png">
 		<title>MF | ABOUT</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
-	<body class="background-brickwall">
+    <body class="background">
+		<div class="all-windows">
 		
-		<a href="../home/index.html" class="back-button">
-			<img src="../images/back.png" alt="Go Back">
-		</a>
-		
-		<div class="board-container">
-			<img src="boardimages/board.png" class="board-bg">
-			<img src="boardimages/stringpins.png" class="board-strings">
 			
-			<a href="about-me/index.html" class="board-piece" style="top: 598px; left: 670px;">
-				<img src="boardimages/aboutme.png" alt="About me" style="width: 99px;">
-			</a>
-			<a href="polaroid/index.html" class="board-piece" style="top: 463px; left: 535px;">
-				<img src="boardimages/polaroid.png" alt="Polaroid" style="width: 110px;">
-			</a>
-			<a href="socials-map/index.html" class="board-piece" style="top: 175px; left: 750px;">
-				<img src="boardimages/socialmap.png" alt="Map" style="width: 337px;">
-			</a>
-			<a href="links/index.html" class="board-piece" style="top: 610px; left: 283px;">
-				<img src="boardimages/links.png" alt="Links" style="width: 194px;">
-			</a>
-			<a href="site-map/index.html" class="board-piece" style="top: 180px; left: 502px;">
-				<img src="boardimages/navigation.png" alt="Navigation" style="width: 220px;">
-			</a>
-			<a href="tools/index.html" class="board-piece" style="top: 339px; left: 240px;">
-				<img src="boardimages/tools.png" alt="Tools" style="width: 226px;">
-			</a>
-			<a href="working-on/index.html" class="board-piece" style="top: 202px; left: 105px;">
-				<img src="boardimages/wip.png" alt="Wip" style="width: 136px;">
-			</a>
+		
+		
+		
+			<div class="about-left">
+				<div class="bar">
+					<img src="../images/icontext/about.png" alt="art" class="bar-img">
+					<img src="../images/icontext/menu.png" alt="menu" class="bar-menu">
+				</div>
+				
+				<div class="window-about-left">
+					<a href="../home/index.html" class="back-button">
+						<picture>
+							<source srcset="../images/back_mob.png" media="(max-width: 766px)">
+							<img src="../images/back.png" alt="Go Back">
+						</picture>
+					</a>
+					
+					
+					
+					<div class="board-container">
+						<img src="boardimages/board.png" target="paper" class="board-bg">
+						<img src="boardimages/stringpins.png" class="board-strings">
+						
+						<a href="about-me/index.html" target="paper" class="board-piece" style="top: 498px; left: 670px;">
+							<img src="boardimages/aboutme.png" alt="About me" style="width: 99px;">
+						</a>
+						<a href="polaroid/index.html" target="paper" class="board-piece" style="top: 363px; left: 535px;">
+							<img src="boardimages/polaroid.png" alt="Polaroid" style="width: 110px;">
+						</a>
+						<a href="links/index.html" target="paper" class="board-piece" style="top: 510px; left: 283px;">
+							<img src="boardimages/links.png" alt="Links" style="width: 194px;">
+						</a>
+						<a href="site-map/index.html" target="paper" class="board-piece" style="top: 80px; left: 502px;">
+							<img src="boardimages/navigation.png" alt="Navigation" style="width: 220px;">
+						</a>
+						<a href="tools/index.html" target="paper" class="board-piece" style="top: 239px; left: 240px;">
+							<img src="boardimages/tools.png" alt="Tools" style="width: 226px;">
+						</a>
+						<a href="working-on/index.html" target="paper" class="board-piece" style="top: 102px; left: 105px;">
+							<img src="boardimages/wip.png" alt="Wip" style="width: 136px;">
+						</a>
+					</div>
+					
+					<div class="radio-container" style="margin: 0 auto;">
+	
+						<iframe 
+							class="radio-content"
+							src="https://www.youtube-nocookie.com/embed/nBPK_oXeJgA?autoplay=1&controls=0&loop=1&playlist=nBPK_oXeJgA" 
+							title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+						</iframe>
+						
+						<img src="../images/radio.gif" class="radio">
+						
+					</div>
+					
+					
+
+					
+				</div>
+			</div>
+	
+	
+	
+			<div class="about-right">
+				<div class="bar">
+					<img src="../images/icontext/table.png" alt="fact" class="bar-img">
+					<img src="../images/icontext/menu.png" alt="menu" class="bar-menu">
+				</div>
+				
+				<div class="window-about-right">
+				
+					
+				
+					<br>
+					<iframe src="polaroid/index.html" name="paper" 
+					style="width: 100%; height: 100%; border: none; flex: 1;"></iframe>
+
+
+					
+				</div>
+			</div>
+	
 		</div>
 
-	</body>
+    </body>
 </html>

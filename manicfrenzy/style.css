@@ -735,9 +735,19 @@ body {
 .board-container {
 	position: relative;
 	width: 1150px;
+	transform: scale(0.9);
+	transform-origin: center;
+	height: auto;
+	margin: 0 auto;
+}
+
+.socialmap-container {
+	position: relative;
+	width: 1150px;
+	transform: scale(0.48);
+	transform-origin: left;
 	height: auto;
 	padding-top: 70px;
-	margin: 0 auto;
 }
 
 .board-bg,
@@ -748,7 +758,7 @@ body {
 
 .board-strings {
 	position: absolute;
-	top: 100px;
+	top: 0px;
 	left: 0;
 	pointer-events: none;
 	z-index: 5;
@@ -802,29 +812,26 @@ body {
 }
 
 .polaroid img {
-	height: 900px;
+	width: 100%;
 }
 
 .board-piece-big {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	font-family: "Caveat";
 }
 
 .paper-wrapper-2 {
 	position: relative;
-	width: 1000px;
-}
-
-.paper-wrapper-3 {
-	position: relative;
-	width: 1300px;
+	transform: scale(calc(100vh / 1200));
+	transform-origin: top center;
 }
 
 .paper-bg {
-	width: 95%;
+	width: 100%;
 	display: block;
 }
 
@@ -843,7 +850,7 @@ body {
 	padding: 20px;
 	overflow: auto;
 	font-size: 18px;
-	line-height: 0.5;
+	line-height: 1.5;
 }
 
 .paper-content-2 {
@@ -863,12 +870,12 @@ body {
 .paper-content-3 {
 	position: absolute;
 	top: 8%;
-	bottom: 5%;
+	bottom: 15%;
 	left: 31%;
 	right: 31%;
 	padding: 20px;
 	overflow: auto;
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 1;
 	font-family: "Special Elite";
 }
@@ -1311,6 +1318,75 @@ position: absolute;
 	filter: drop-shadow(0 10px 0 rgba(0, 0, 0, 0.5));
 	transform: scale(1.05);
 }
+
+.about-left {
+	width: 70%;
+	min-height: 100%;
+	height: auto;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+	gap: 2px;
+	margin: 0 auto;
+}
+
+.about-right {
+	width: 30%;
+	height: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+	gap: 2px;
+}
+
+.window-about-left {
+	flex: 1;
+	background-image: url("images/pattern5.png");
+	background-size: 200px 200px;
+	padding: 7%;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.window-about-right {
+	flex: 1;
+	background-image: url("about/boardimages/table.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+.window-about-right p {
+	color: #23190e;
+	font-family: "Special Elite";
+	font-size: 20px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.window-about-right a {
+	text-decoration: none;
+}
+
+.window-about-right a:hover {
+	text-decoration: underline;
+	color: #23190e;
+}
+
 
 
 
