@@ -108,7 +108,6 @@ body {
 	background-size: 370px 370px;
 	overflow-y: auto;  
 	overflow-x: hidden;
-	scrollbar-width: none;
 }
 
 .bottom-left {
@@ -152,6 +151,22 @@ body {
 	align-items: center;
 	width: 100%;
 	justify-content: space-between;
+}
+
+.bar img {
+	overflow: hidden;
+}
+
+.bar-top-vert img {
+	overflow: hidden;
+}
+
+.bar-top-left img {
+	overflow: hidden;
+}
+
+.bar-top-right img {
+	overflow: hidden;
 }
 
 .window-middle {
@@ -485,6 +500,7 @@ body {
 	justify-content: center;
 	gap: 20px;
 	position: relative;
+	overflow: auto;
 }
 
 .bottom-vert {
