@@ -1257,6 +1257,49 @@ position: absolute;
 	margin: auto;
 }
 
+.art-viewer-grid-container {
+	overflow: hidden;
+}
+
+.art-viewer-grid {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	column-gap: 10px;
+	justify-content: center;
+}
+
+.art-viewer-grid img {
+	height: 100%;
+	max-height: 450px;
+	display: block;
+	margin: 0 auto;
+}
+
+.art-viewer-txt {
+	color: white;
+	font-family: "Salsa";
+	font-size: 30px;
+	padding-top: 25px;
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	
+	text-shadow:
+		-2px -2px 0 #000,
+		 2px -2px 0 #000,
+		-2px  2px 0 #000,
+		 2px  2px 0 #000;
+}
+
+.artfight-link img:hover {
+	transform: scale(1.2);
+}
+.artfight-link img {
+	transition: transform 0.2s ease;
+	display: block;
+	margin: auto;
+}
+
 .hanger-container {
 	position: relative;
 	width: 100%;
