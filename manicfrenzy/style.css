@@ -1430,6 +1430,15 @@ position: absolute;
 	color: #23190e;
 }
 
+.ring-container {
+	color: white;
+	font-family: "Salsa";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
 
 
 
