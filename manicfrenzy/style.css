@@ -674,10 +674,10 @@ body {
 
 .changelog-txt {
 	position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 4%;
-  right: 4%;
+	top: 0;
+	bottom: 0;
+	left: 4%;
+	right: 4%;
 
 	font-size: 17px;
 	font-family: "Salsa";
@@ -687,6 +687,14 @@ body {
 
 .changelog-txt strong {
 		color: white;
+}
+
+.changelog-txt a {
+	color: #d9d9d9;
+}
+
+.changelog-txt a:hover {
+	color: white;
 }
 
 .ad img {
