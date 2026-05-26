@@ -1440,11 +1440,10 @@ position: absolute;
 
 .ring-container {
 	color: white;
-	font-family: "Salsa";
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+	max-width: 100% !important;
 }
 
 
