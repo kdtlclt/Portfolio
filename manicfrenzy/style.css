@@ -1140,7 +1140,7 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 	width: min(125vh, 100vw);
-	aspect-ratio: 4 / 3; /* or your kiosk art ratio */
+	aspect-ratio: 4 / 3;
 }
 
 .kiosk {
@@ -1194,6 +1194,11 @@ body {
 		drop-shadow(0 -2px 0 white);
 }
 
+.kiosk-object-closed {
+	position: absolute;
+	z-index: 3;
+}
+
 .kiosk-speech {
 	margin: 0;
 	padding: 0;
@@ -1202,11 +1207,90 @@ body {
 	color: black;
 }
 
-.radio-container {
-	position: relative;
-	width: 350px;
-	height: 263px;
+.kiosk-title {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
 }
+
+.reviewbox-f {
+	position: absolute;
+	width: 100%;
+	bottom: 3px;
+}
+
+.reviewbox-b {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+.reviewbox-container-f {
+    position: fixed;
+
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 60%;
+
+    pointer-events: none;
+	z-index: 5;
+}
+
+.reviewbox-container-b {
+    position: fixed;
+
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 60%;
+
+    pointer-events: none;
+	z-index: 1;
+}
+
+.review-scroll {
+    position: fixed;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30%;
+    height: 100vh;
+
+    overflow-y: auto;
+	overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	z-index: 3;
+	
+	padding-top: 500px;
+    padding-bottom: 300px;
+
+    box-sizing: border-box;
+}
+
+.review-slip {
+	position: relative;
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+.slip-bg {
+    width: 100%;
+    display: block;
+}
+
+.slip-images {
+	position: absolute;
+	top: 20%;
+}
+
 
 .radio {
 	position: relative;
@@ -1214,6 +1298,12 @@ body {
 	height: auto;
 	z-index: 2;
 	pointer-events: none;
+}
+
+.radio-container {
+	position: relative;
+	width: 350px;
+	height: 263px;
 }
 
 .radio-content {
