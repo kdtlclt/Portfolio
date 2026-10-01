@@ -10,32 +10,200 @@ const panel = document.querySelector(".oc-panel");
 const afLink = document.querySelector(".artfight-link");
 
 const ocs = {
-	Test1: {
-		name: "Testonius1",
-		desc: "testingtes",
-		artfight: "https://artfight.net/~KDT",
-		images: [
-			"ocAssets/test1/timg1.png",
-			"ocAssets/test1/timg2.png",
-			"ocAssets/test1/timg3.png"
-		]
-	},
-	Test2: {
-		name: "Testonius2",
-		desc: "testingtes2",
-		images: [
-			"ocAssets/test2/timg1.png",
-			"ocAssets/test2/timg2.png"
-		]
-	},
 	lyssa: {
-		name: "Lyssa",
+		name: "<span style=\"color: #452E48;\">Lyssa</span>",
 		desc: "[SPECIES: Dark Elf] <br><br>"
 		+ "Overworked, pissed off and tired. <br>"
 		+ "Runs on coffee and anger management pills.",
 		artfight: "https://artfight.net/character/4171983.lyssa",
 		size: 1,
 		images: [
+			"ocAssets/lyssa/lysref.png",
+			"ocAssets/lyssa/lyssa.png"
+		]
+	},
+	feli: {
+		name: "<span style=\"color: #DD1156;\">Feli</span>",
+		desc: "a very happy (but occasionally awkward) monster girl",
+		artfight: "https://artfight.net/character/3081016.feli",
+		size: 1,
+		images: [
+			"ocAssets/feli/feliref.png",
+			"ocAssets/feli/felipeephole.png",
+			"ocAssets/feli/feliselfie.png"
+		]
+	},
+	person: {
+		name: "<span style=\"color: #B0FE76;\">\"person\"</span>",
+		desc: "[SPECIES: Stone Golem] <br><br>"
+		+ "Does \"person\" even have a \"personality\"? <br>"
+		+ "Who knows...",
+		artfight: "https://artfight.net/character/8004706.person",
+		size: 1.2,
+		images: [
+			"ocAssets/person/personref.png",
+			"ocAssets/person/per.png",
+			"ocAssets/person/personrotate.png"
+		]
+	},
+	villa: {
+		name: "Villa",
+		desc: "[SPECIES: Sheep] <br><br>"
+		+ "baabaa <br>"
+		+ "idk what to write here <br><br>"
+		+ "baa",
+		artfight: "https://artfight.net/character/7983373.villa",
+		size: 1,
+		images: [
+		]
+	},
+	sylvia: {
+		name: "<span style=\"color: #2C4C43;\">Sylvia</span>",
+		desc: "an isolated \"monster\" who lives in the woods",
+		artfight: "https://artfight.net/character/2836238.sylvia",
+		size: 1.5,
+		images: [
+			"ocAssets/sylvia/sylref.png",
+			"ocAssets/sylvia/sylbw.png"
+		]
+	},
+	claws: {
+		name: "Claws",
+		desc: "Not as fun as she seems..",
+		artfight: "https://artfight.net/character/7698021.claws",
+		size: 1,
+		images: [
+		]
+	},
+	livi: {
+		name: "Livi",
+		desc: "[SPECIES: Snow Elf] <br><br>"
+		+ "totally not just hornybait",
+		artfight: "https://artfight.net/character/4172081.livi",
+		size: 1,
+		images: [
+		]
+	},
+	gloomy: {
+		name: "Gloomy",
+		desc: "She's storming",
+		artfight: "https://artfight.net/character/4172196.gloomy",
+		size: 1,
+		images: [
+		]
+	},
+	eni: {
+		name: "<span style=\"color: #7500CB;\">Eni</span>",
+		desc: "unpredictable menace",
+		artfight: "https://artfight.net/character/4172297.eni",
+		size: 1.2,
+		images: [
+			"ocAssets/eni/enifullbody.png",
+			"ocAssets/eni/shroom-spellcaster.gif",
+			"ocAssets/eni/LAstreamer.png",
+			"ocAssets/eni/gemalarm.gif"
+		]
+	},
+	keeper1: {
+		name: "<span style=\"color: #906EA4;\">The First Lighthouse Keeper</span>",
+		desc: "A keeper of one the three Great Lighthouses <br><br>"
+		+ "The Lighthouse Keepers are mysterious godlike creatures that live in the mountains." 
+		+ " Their job is to make sure the Great Lighthouses are working and to guard them from any plausible threats." 
+		+ " As long as they work, so does reality.",
+		artfight: "https://artfight.net/character/2594104.the-first-lighthouse-keeper",
+		size: 1.2,
+		images: [
+			"ocAssets/keepers/keeper1ref.png"
+		]
+	},
+	keeper2: {
+		name: "<span style=\"color: #293A44;\">The Second Lighthouse Keeper</span>",
+		desc: "A keeper of one the three Great Lighthouses <br><br>"
+		+ "The Lighthouse Keepers are mysterious godlike creatures that live in the mountains." 
+		+ " Their job is to make sure the Great Lighthouses are working and to guard them from any plausible threats." 
+		+ " As long as they work, so does reality.",
+		artfight: "https://artfight.net/character/2632575.the-second-lighthouse-keeper",
+		size: 1.2,
+		images: [
+			"ocAssets/keepers/keeper2ref.png"
+		]
+	},
+	keeper3: {
+		name: "<span style=\"color: #6A243D;\">The Third Lighthouse Keeper</span>",
+		desc: "A keeper of one the three Great Lighthouses <br><br>"
+		+ "The Lighthouse Keepers are mysterious godlike creatures that live in the mountains." 
+		+ " Their job is to make sure the Great Lighthouses are working and to guard them from any plausible threats." 
+		+ " As long as they work, so does reality.",
+		artfight: "https://artfight.net/character/2652040.the-third-lighthouse-keeper",
+		size: 1.4,
+		images: [
+			"ocAssets/keepers/keeper3ref.png"
+		]
+	},
+	vin: {
+		name: "Vin",
+		desc: "[SPECIES: Snow Elf] <br><br>"
+		+ "least violent femboy..",
+		artfight: "https://artfight.net/character/7719988.vin",
+		size: 1,
+		images: [
+		]
+	},
+	laria: {
+		name: "<span style=\"color: #3F624C;\">Laria</span>",
+		desc: "[SPECIES: Elf, Undead] <br><br>"
+		+ "Dying didn't stop her. What makes you think anything else can?",
+		artfight: "https://artfight.net/character/6356860.laria",
+		size: 1,
+		images: [
+			"ocAssets/laria/lariaref.png",
+			"ocAssets/laria/stare.png",
+			"ocAssets/laria/lariapose.png",
+			"ocAssets/laria/larialay.png"
+		]
+	},
+	sade: {
+		name: "Sade",
+		desc: "[SPECIES: Siren] <br><br>"
+		+ "trustworthy :)",
+		artfight: "https://artfight.net/character/3799627.sade",
+		size: 1.3,
+		images: [
+		]
+	},
+	lim: {
+		name: "Lim",
+		desc: "[SPECIES: Slime] <br><br>"
+		+ "sticky",
+		artfight: "https://artfight.net/character/7853971.lim",
+		size: 1,
+		images: [
+		]
+	},
+	clover: {
+		name: "Clover",
+		desc: "[SPECIES: Northern Hawk-Owl] <br><br>"
+		+ "yo, yo-yo",
+		artfight: "https://artfight.net/character/8124207.clover",
+		size: 1,
+		images: [
+		]
+	},
+	valentine: {
+		name: 'The <span style="color:rgb(255,99,177);">Valiant TINE-Operative</span>',
+		desc: `(or "Valentine") <br><br>
+		After years of research, development and testing, our team of experts have
+		finally finished the latest model in the TINE-family. (Pristine, Guillotine, Routine etc.) <br><br>
+		Meet <span style="color:rgb(255,99,177);">Valentine</span>, your personal assistant, bodyguard and friend. <br><br>
+		<em>Brought to you by TINE Robotics</em> <br>
+		<span style="font-size:15px;">[Disclaimer: TINE Robotics is not responsible for the possibility of one of our operatives misidentifying
+		targets and executing everything the model determines to be a threat. This might include property, pets,
+		significant others or family members.]</span>`,
+		artfight: "https://artfight.net/character/9119168.valentine",
+		size: 1,
+		images: [
+			"ocAssets/valentine/ValentineRef.png",
+			"ocAssets/valentine/val.png"
 		]
 	}
 };
@@ -44,23 +212,30 @@ window.addEventListener("load", () => {
 	const speed = 50;
 	const roomWidth = camp.clientWidth;
 	const roomHeight = camp.clientHeight;
-	const walkTop = roomHeight * 0.5;
+	const walkTop = roomHeight * 0.4;
 	
 	
 	//Initial size
-	const wandererSize = camp.clientWidth * (250 / 2400);
 	wanderers.forEach(wanderer => {
 		const image = wanderer.querySelector("img");
+		const oc = ocs[wanderer.dataset.oc];
+		const size = oc.size || 1;
+
+		const wandererSize = camp.clientWidth * (280 / 2400) * size;
+
 		image.style.height = `${wandererSize}px`;
 		image.style.width = "auto";
 	});
 	
 	// update size
 	window.addEventListener("resize", () => {
-		const wandererSize = camp.clientWidth * (250 / 2400);
-
 		wanderers.forEach(wanderer => {
 			const image = wanderer.querySelector("img");
+			const oc = ocs[wanderer.dataset.oc];
+			const size = oc.size || 1;
+
+			const wandererSize = camp.clientWidth * (280 / 2400) * size;
+
 			image.style.height = `${wandererSize}px`;
 			image.style.width = "auto";
 		});
@@ -81,7 +256,7 @@ window.addEventListener("load", () => {
 			overlay.style.display = "flex";
 			const oc = ocs[wanderer.dataset.oc];
 			panel.scrollTop = 0;
-			name.textContent = oc.name;
+			name.innerHTML = oc.name;
 			desc.innerHTML = oc.desc;
 			
 			// Show artfight link if it exists

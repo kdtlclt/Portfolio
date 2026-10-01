@@ -695,7 +695,6 @@ body {
 	font-size: 17px;
 	font-family: "Salsa";
 	color: #b3b3b3;
-
 }
 
 .changelog-txt strong {
@@ -1662,10 +1661,19 @@ position: absolute;
 	overflow-y: auto;
 }
 
-.oc-panel h1, p{
+.oc-panel h1, 
+.oc-panel p {
 	color: white;
 	text-align: center;
 	font-family: "Salsa";
+}
+
+.camp-txt {
+	color: white;
+	text-align: center;
+	font-family: "Salsa";
+	font-size: 30px;
+	width: 80%;
 }
 
 .oc-panel p {
@@ -1679,7 +1687,6 @@ position: absolute;
 	justify-content: center;
 	align-content: flex-start;
 	height: auto;
-	min-height: 100%;
 }
 
 .oc-images img {
