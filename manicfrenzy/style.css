@@ -234,6 +234,19 @@ body {
 	overflow: auto;
 }
 
+.window-middle-camp {
+	flex: 1;
+	background-image: url("images/pattern.png");
+	animation: moveBackground 20s linear infinite;
+	background-size: 370px 370px;
+	position: relative;
+	overflow: auto;
+	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .thought-grid {
 	display: grid;
 	grid-template-columns: repeat(3, auto);
@@ -1393,9 +1406,16 @@ position: absolute;
 	transform: scale(1.2);
 }
 .artfight-link img {
+	width: 70px;
 	transition: transform 0.2s ease;
 	display: block;
 	margin: auto;
+}
+
+.artfight-container {
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 50px;
 }
 
 .hanger-container {
@@ -1536,6 +1556,137 @@ position: absolute;
 	max-width: 100% !important;
 }
 
+.wanderer {
+	position: absolute;
+	visibility: hidden;
+	cursor: pointer;
+	width: fit-content;
+    height: fit-content;
+}
+
+.wanderer img {
+	height: 110%;
+}
+
+.bounce-wrapper {
+}
+
+.bounce-wrapper img {
+	width: auto;
+	transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.bounce-wrapper img:hover {
+	filter: drop-shadow(2px 0 white)
+        drop-shadow(-2px 0 white)
+        drop-shadow(0 2px white)
+        drop-shadow(0 -2px white);
+}
+
+.bounce-wrapper.walking {
+	animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.campsite {
+	position: relative;
+	width: 80%;
+	aspect-ratio: 4 / 3;
+	background-image: url("camp/campsite-bg.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.camp-frame {
+	position: absolute;
+	width: 90%;
+	aspect-ratio: 3300 / 2450;
+	pointer-events: none;
+	z-index: 10000;
+}
+
+.dark-overlay {
+	position: absolute;
+	inset: 0;
+	display: none;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 8000;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay-close {
+	position: sticky;
+	top: 20px;
+	margin-right: auto;
+	background: transparent;
+	border: 0;
+	padding: 0;
+	appearance: none;
+    -webkit-appearance: none;
+	cursor: pointer;
+	z-index: 9000;
+}
+
+.overlay-close img {
+	display: block;
+	transition: transform 0.2s ease;
+	width: 30px;
+	height: 30px;
+}
+
+.overlay-close img:hover {
+	transform: scale(1.1);
+}
+
+.oc-panel {
+	position: relative;
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	overflow-y: auto;
+}
+
+.oc-panel h1, p{
+	color: white;
+	text-align: center;
+	font-family: "Salsa";
+}
+
+.oc-panel p {
+	font-size: 20px;
+}
+
+.oc-images {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	align-content: flex-start;
+	height: auto;
+	min-height: 100%;
+}
+
+.oc-images img {
+	max-width: 70%;
+	width: auto;
+	height: auto;
+}
 
 
 
