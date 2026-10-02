@@ -261,6 +261,15 @@ const ocs = {
 			"../ocAssets/suo/slurp.png"
 		]
 	},
+	orc: {
+		name: "[UNNAMED]",
+		desc: "[SPECIES: Orc] <br><br>"
+		+ "bloodorc woman I drew in 2025 but haven't named",
+		size: 1,
+		images: [
+			"../ocAssets/orc/orc.png"
+		]
+	}
 };
 
 window.addEventListener("load", () => {
