@@ -186,7 +186,7 @@ body {
 	flex: 1;
 	background-image:
 		url("grove/treeimages/ground.png"),
-		url("grove/treeimages/skypattern.png"),
+		url("images/skypattern.png"),
 		url("grove/treeimages/treebg2.png");
 	background-size:
 		cover,
@@ -535,8 +535,8 @@ body {
 	flex: 1;
 	overflow-y: auto;
 	background-image: 
-		url("grove/treeimages/sign.png"),
-		url("grove/treeimages/skypattern.png"),
+		url("images/sign.png"),
+		url("images/skypattern.png"),
 		url("grove/treeimages/treebg2.png");
 	background-size:
 		contain,
@@ -555,6 +555,30 @@ body {
 }
 
 .window-right-grove::-webkit-scrollbar {
+  display: none;
+}
+
+.window-right-signs {
+	flex: 1;
+	overflow-y: auto;
+	background-image: 
+		url("images/sign.png"),
+		url("images/signskydark.png");
+	background-size:
+		contain,
+		cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	scrollbar-width: none; 
+	-ms-overflow-style: none;   
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior: none;
+}
+
+.window-right-signs::-webkit-scrollbar {
   display: none;
 }
 

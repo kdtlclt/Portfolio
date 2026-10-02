@@ -18,8 +18,8 @@ const ocs = {
 		artfight: "https://artfight.net/character/4171983.lyssa",
 		size: 1,
 		images: [
-			"ocAssets/lyssa/lysref.png",
-			"ocAssets/lyssa/lyssa.png"
+			"../ocAssets/lyssa/lysref.png",
+			"../ocAssets/lyssa/lyssa.png"
 		]
 	},
 	feli: {
@@ -28,9 +28,9 @@ const ocs = {
 		artfight: "https://artfight.net/character/3081016.feli",
 		size: 1,
 		images: [
-			"ocAssets/feli/feliref.png",
-			"ocAssets/feli/felipeephole.png",
-			"ocAssets/feli/feliselfie.png"
+			"../ocAssets/feli/feliref.png",
+			"../ocAssets/feli/felipeephole.png",
+			"../ocAssets/feli/feliselfie.png"
 		]
 	},
 	person: {
@@ -41,13 +41,13 @@ const ocs = {
 		artfight: "https://artfight.net/character/8004706.person",
 		size: 1.2,
 		images: [
-			"ocAssets/person/personref.png",
-			"ocAssets/person/per.png",
-			"ocAssets/person/personrotate.png"
+			"../ocAssets/person/personref.png",
+			"../ocAssets/person/per.png",
+			"../ocAssets/person/personrotate.png"
 		]
 	},
 	villa: {
-		name: "Villa",
+		name: "<span style=\"color: #FFC846;\">Villa</span>",
 		desc: "[SPECIES: Sheep] <br><br>"
 		+ "baabaa <br>"
 		+ "idk what to write here <br><br>"
@@ -55,6 +55,12 @@ const ocs = {
 		artfight: "https://artfight.net/character/7983373.villa",
 		size: 1,
 		images: [
+			"../ocAssets/villa/villaref.png",
+			"../ocAssets/villa/villakukka.png",
+			"../ocAssets/villa/villaswimsuit.png",
+			"../ocAssets/villa/villasuspenders.png",
+			"../ocAssets/villa/shep.png",
+			"../ocAssets/villa/villawitch.png"
 		]
 	},
 	sylvia: {
@@ -63,8 +69,8 @@ const ocs = {
 		artfight: "https://artfight.net/character/2836238.sylvia",
 		size: 1.5,
 		images: [
-			"ocAssets/sylvia/sylref.png",
-			"ocAssets/sylvia/sylbw.png"
+			"../ocAssets/sylvia/sylref.png",
+			"../ocAssets/sylvia/sylbw.png"
 		]
 	},
 	claws: {
@@ -98,10 +104,10 @@ const ocs = {
 		artfight: "https://artfight.net/character/4172297.eni",
 		size: 1.2,
 		images: [
-			"ocAssets/eni/enifullbody.png",
-			"ocAssets/eni/shroom-spellcaster.gif",
-			"ocAssets/eni/LAstreamer.png",
-			"ocAssets/eni/gemalarm.gif"
+			"../ocAssets/eni/enifullbody.png",
+			"../ocAssets/eni/shroom-spellcaster.gif",
+			"../ocAssets/eni/LAstreamer.png",
+			"../ocAssets/eni/gemalarm.gif"
 		]
 	},
 	keeper1: {
@@ -113,7 +119,7 @@ const ocs = {
 		artfight: "https://artfight.net/character/2594104.the-first-lighthouse-keeper",
 		size: 1.2,
 		images: [
-			"ocAssets/keepers/keeper1ref.png"
+			"../ocAssets/keepers/keeper1ref.png"
 		]
 	},
 	keeper2: {
@@ -125,7 +131,7 @@ const ocs = {
 		artfight: "https://artfight.net/character/2632575.the-second-lighthouse-keeper",
 		size: 1.2,
 		images: [
-			"ocAssets/keepers/keeper2ref.png"
+			"../ocAssets/keepers/keeper2ref.png"
 		]
 	},
 	keeper3: {
@@ -137,7 +143,7 @@ const ocs = {
 		artfight: "https://artfight.net/character/2652040.the-third-lighthouse-keeper",
 		size: 1.4,
 		images: [
-			"ocAssets/keepers/keeper3ref.png"
+			"../ocAssets/keepers/keeper3ref.png"
 		]
 	},
 	vin: {
@@ -156,10 +162,10 @@ const ocs = {
 		artfight: "https://artfight.net/character/6356860.laria",
 		size: 1,
 		images: [
-			"ocAssets/laria/lariaref.png",
-			"ocAssets/laria/stare.png",
-			"ocAssets/laria/lariapose.png",
-			"ocAssets/laria/larialay.png"
+			"../ocAssets/laria/lariaref.png",
+			"../ocAssets/laria/stare.png",
+			"../ocAssets/laria/lariapose.png",
+			"../ocAssets/laria/larialay.png"
 		]
 	},
 	sade: {
@@ -181,12 +187,15 @@ const ocs = {
 		]
 	},
 	clover: {
-		name: "Clover",
+		name: "<span style=\"color: #FA7BB0;\">Clover</span>",
 		desc: "[SPECIES: Northern Hawk-Owl] <br><br>"
 		+ "yo, yo-yo",
 		artfight: "https://artfight.net/character/8124207.clover",
 		size: 1,
 		images: [
+			"../ocAssets/clover/clover.png",
+			"../ocAssets/clover/yoyotrick.png",
+			"../ocAssets/clover/mice_cream.png"
 		]
 	},
 	valentine: {
@@ -202,10 +211,56 @@ const ocs = {
 		artfight: "https://artfight.net/character/9119168.valentine",
 		size: 1,
 		images: [
-			"ocAssets/valentine/ValentineRef.png",
-			"ocAssets/valentine/val.png"
+			"../ocAssets/valentine/ValentineRef.png",
+			"../ocAssets/valentine/val.png"
 		]
-	}
+	},
+	burrow: {
+		name: "[UNNAMED]",
+		desc: "[SPECIES: Burrowing Owl] <br><br>"
+		+ "#1 customer of the local hardware store",
+		size: 1,
+		images: [
+			"../ocAssets/burrow/preeria.png"
+		]
+	},
+	glubslob: {
+		name: "<span style=\"color: #BCA583;\">Glubslob</span>",
+		desc: "Big creatures of unknown origin. Dangerous.",
+		size: 2,
+		images: [
+			"../ocAssets/glubslob/glubslob.png"
+		]
+	},
+	mellow: {
+		name: "<span style=\"color: #C59FC3;\">Mellow</span>",
+		desc: "[SPECIES: Cat] <br><br>"
+		+ "Gigantic robot limbs, a gigantic axe and a gigantic heart (unless she gets angry)",
+		artfight: "https://artfight.net/character/9359770.mellow",
+		size: 1.3,
+		images: [
+			"../ocAssets/mellow/mellow.png"
+		]
+	},
+	pinkdragon: {
+		name: "[UNNAMED]",
+		desc: "[SPECIES: Dragon] <br><br>"
+		+ "A dragon that I drew one day. No name, no nothing yet..",
+		size: 1,
+		images: [
+			"../ocAssets/pinkdragon/dragon.png"
+		]
+	},
+	suo: {
+		name: "[UNNAMED]",
+		desc: "[SPECIES: Short-Eared Owl] <br><br>"
+		+ "I don't think she's interested...",
+		size: 1,
+		images: [
+			"../ocAssets/suo/suo.png",
+			"../ocAssets/suo/slurp.png"
+		]
+	},
 };
 
 window.addEventListener("load", () => {
