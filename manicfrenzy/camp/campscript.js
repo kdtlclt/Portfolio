@@ -74,28 +74,43 @@ const ocs = {
 		]
 	},
 	claws: {
-		name: "Claws",
+		name: "<span style=\"color: #FF0050;\">Claws</span>",
 		desc: "Not as fun as she seems..",
 		artfight: "https://artfight.net/character/7698021.claws",
 		size: 1,
 		images: [
+			"../ocAssets/claws/clawsref.png",
+			"../ocAssets/claws/claws.png",
+			"../ocAssets/claws/bat.png",
+			"../ocAssets/claws/clawspinup.png"
 		]
 	},
 	livi: {
-		name: "Livi",
+		name: "<span style=\"color: #593B83;\">Livi</span>",
 		desc: "[SPECIES: Snow Elf] <br><br>"
 		+ "totally not just hornybait",
 		artfight: "https://artfight.net/character/4172081.livi",
 		size: 1,
 		images: [
+			"../ocAssets/livi/overalls.png",
+			"../ocAssets/livi/knees.png",
+			"../ocAssets/livi/livilaying.png",
+			"../ocAssets/livi/livitowel.png"
 		]
 	},
 	gloomy: {
-		name: "Gloomy",
+		name: "<span style=\"color: #AEDEFD;\">Gloomy</span>",
 		desc: "She's storming",
 		artfight: "https://artfight.net/character/4172196.gloomy",
 		size: 1,
 		images: [
+			"../ocAssets/gloomy/gloomy.png",
+			"../ocAssets/gloomy/gloombehind.png",
+			"../ocAssets/gloomy/gloomcap.png",
+			"../ocAssets/gloomy/gloomcap2.png",
+			"../ocAssets/gloomy/gloomcap3.png",
+			"../ocAssets/gloomy/corrupt.png",
+			"../ocAssets/gloomy/gloomysea.png"
 		]
 	},
 	eni: {
@@ -147,12 +162,17 @@ const ocs = {
 		]
 	},
 	vin: {
-		name: "Vin",
+		name: "<span style=\"color: #86579D;\">Vin</span>",
 		desc: "[SPECIES: Snow Elf] <br><br>"
 		+ "least violent femboy..",
 		artfight: "https://artfight.net/character/7719988.vin",
 		size: 1,
 		images: [
+			"../ocAssets/vin/vinref.png",
+			"../ocAssets/vin/restroom.png",
+			"../ocAssets/vin/collector.png",
+			"../ocAssets/vin/selfie.png",
+			"../ocAssets/vin/sling.png",
 		]
 	},
 	laria: {
@@ -169,21 +189,28 @@ const ocs = {
 		]
 	},
 	sade: {
-		name: "Sade",
+		name: "<span style=\"color: #5B6694;\">Sade</span>",
 		desc: "[SPECIES: Siren] <br><br>"
 		+ "trustworthy :)",
 		artfight: "https://artfight.net/character/3799627.sade",
-		size: 1.3,
+		size: 1.2,
 		images: [
+			"../ocAssets/sade/saderef.png",
+			"../ocAssets/sade/sade.png",
+			"../ocAssets/sade/sadestare.png"
 		]
 	},
 	lim: {
-		name: "Lim",
+		name: "<span style=\"color: #55427A;\">Lim</span>",
 		desc: "[SPECIES: Slime] <br><br>"
 		+ "sticky",
 		artfight: "https://artfight.net/character/7853971.lim",
 		size: 1,
 		images: [
+			"../ocAssets/lim/limref.png",
+			"../ocAssets/lim/lim.png",
+			"../ocAssets/lim/slimeonknees.png",
+			"../ocAssets/lim/slimebikini.png"
 		]
 	},
 	clover: {
@@ -269,7 +296,229 @@ const ocs = {
 		images: [
 			"../ocAssets/orc/orc.png"
 		]
-	}
+	},
+	apollo: {
+		name: "<span style=\"color: #8D7FA4;\">Apollo</span>",
+		desc: "[SPECIES: <i>Parnassius apollo</i>] <br><br>"
+		+ "You can't spell \"sassy\" without \Apollo\". ohwait <br>"
+		+ "He's very confident with his looks. If there ever is a spotlight, he'll probably make his way to it.",
+		artfight: "https://artfight.net/character/7947589.apollo",
+		size: 1,
+		images: [
+			"../ocAssets/apollo/apollo.png",
+			"../ocAssets/apollo/smile.png"
+		]
+	},
+	stripes: {
+		name: "<span style=\"color: #BBB5DC;\">Stripes</span>",
+		desc: "[SPECIES: <i>Heliconius charithonia,</i> The Zebra Longwing] <br><br>"
+		+ "He's a flirt. <br>"
+		+ "Stripes is very touch starved. He loves hugging people, often forgetting that a lot of them have boundaries.",
+		artfight: "https://artfight.net/character/7951077.stripes",
+		size: 1,
+		images: [
+			"../ocAssets/stripes/stripes.png"
+		]
+	},
+	sail: {
+		name: "<span style=\"color: #52506B;\">Sail</span>",
+		desc: "[SPECIES: <i>Iphiclides podalirius,</i> The Scarce Swallowtail] <br><br>"
+		+ "He's a flirt. <br>"
+		+ "Sail might seem pretty pissed at first but that's partly a facade. <br>"
+		+ "He's insecure with himself so he's trying to act more intimidating (but he does get frustrated easily).",
+		artfight: "https://artfight.net/character/7951083.sail",
+		size: 1,
+		images: [
+			"../ocAssets/sail/sail.png"
+		]
+	},
+	sorrow: {
+		name: "<span style=\"color: #1DAACD;\">Sorrow</span>",
+		desc: "[SPECIES: <i>Graphium sarpedon,</i> The Common Bluebottle] <br><br>"
+		+ "A chronic overthinker <br>"
+		+ "Sorrow likes being with his friends but he never wants to be the center of attention. <br>"
+		+ "Also, he's not a fan of suddenly being touched without a warning. (Stripes should take some notes)",
+		artfight: "https://artfight.net/character/7951085.sorrow",
+		size: 1,
+		images: [
+			"../ocAssets/sorrow/sorrow.png",
+			"../ocAssets/sorrow/sorrow-waiter.png"
+		]
+	},
+	rose: {
+		name: "<span style=\"color: #D7296E;\">Rose</span>",
+		desc: "[SPECIES: <i>Pachliopta aristolochiae,</i> The Common Rose] <br><br>"
+		+ "Rose lives for attention and compliments. <br>"
+		+ "He's always trying to be very cutesy and likes being treated like a prince. <br>"
+		+ "But sometimes he's a bit too self-centered and gets jealous easily..",
+		artfight: "https://artfight.net/character/7951088.rose",
+		size: 1,
+		images: [
+			"../ocAssets/rose/rose.png"
+		]
+	},
+	resin: {
+		name: "<span style=\"color: #845B2D;\">Resin</span>",
+		desc: "[SPECIES: <i>Haetera piera,</i> The Amber Phantom] <br><br>"
+		+ "No one really knows what's going on in his head. Talking to him is like communicating with a ghost. <br>"
+		+ "He whispers everything he says. <br><br>"
+		+ "Resin's kind of confused when it comes dealing with other people. He's kind and cares for others but often has a hard time expressing that.",
+		artfight: "https://artfight.net/character/7951095.resin",
+		size: 1,
+		images: [
+			"../ocAssets/resin/resin.png",
+			"../ocAssets/resin/resin2.png"
+		]
+	},
+	sully: {
+		name: "<span style=\"color: #FFBC22;\">Sully</span>",
+		desc: "[SPECIES: <i>Phoebis philea,</i> The Orange-Barred Sulphur] <br><br>"
+		+ "Very easygoing, very chill <br>"
+		+ "He's kind of just hanging out..",
+		artfight: "https://artfight.net/character/7951402.sully",
+		size: 1,
+		images: [
+			"../ocAssets/sully/sully.png"
+		]
+	},
+	rook: {
+		name: "<span style=\"color: #22EE74;\">Rook</span>",
+		desc: "[SPECIES: <i>Trogonoptera brookiana,</i> Rajah Brooke's Birdwing] <br><br>"
+		+ "That's not a femboy... That's a fem-man! <br>"
+		+ "Rook is almost as strong as he is flashy.",
+		artfight: "https://artfight.net/character/7951405.rook",
+		size: 1,
+		images: [
+			"../ocAssets/rook/rook.png"
+		]
+	},
+	lehti: {
+		name: "<span style=\"color: #4F4337;\">Lehti</span>",
+		desc: "[SPECIES: <i>Kallima inachus,</i> The Dead Leaf] <br><br>"
+		+ "Lehti is kind of a mess who will easily get a panic attack. <br>"
+		+ "He's generally a nice person but the zombie-esque vibe doesn't make him seem very trustworthy..",
+		artfight: "https://artfight.net/character/7951412.lehti",
+		size: 1,
+		images: [
+			"../ocAssets/lehti/lehti.png"
+		]
+	},
+	angel: {
+		name: "<span style=\"color: #FF1057;\">Angel</span>",
+		desc: "[SPECIES: <i>Chorinea sylphina,</i> The Sylphina Angel] <br><br>"
+		+ "Incredibly nice, really positive. Angel is always trying to make sure everyone around him is having a good time. <br>"
+		+ "He sometimes tries too hard to reach that goal and ends up exhausting himself.",
+		artfight: "https://artfight.net/character/7951417.angel",
+		size: 1.2,
+		images: [
+			"../ocAssets/angel/angel.png"
+		]
+	},
+	sphinx: {
+		name: "<span style=\"color: #78614A;\">Sphinx</span>",
+		desc: "[SPECIES: <i>Smerinthus jamaicensis,</i> The Twin-Spotted Sphinx] <br><br>"
+		+ "Sphinx is incredibly strict when it comes to the way she makes herself look.. <br>"
+		+ "She's not easily impressed.",
+		artfight: "https://artfight.net/character/8079732.sphinx",
+		size: 1,
+		images: [
+			"../ocAssets/sphinx/sphinx.png"
+		]
+	},
+	keri: {
+		name: "<span style=\"color: #F26419;\">Keri</span>",
+		desc: "[SPECIES: <i>Arctia caja,</i> The Garden Tiger Moth] <br><br>"
+		+ "She would easily break the arms of your enemies, bend steel and pat you on your cute little head",
+		artfight: "https://artfight.net/character/8079745.keri",
+		size: 1.2,
+		images: [
+			"../ocAssets/keri/keri.png"
+		]
+	},
+	vesta: {
+		name: "<span style=\"color: #F50071;\">Vesta</span>",
+		desc: "[SPECIES: <i>Spilosoma vestalis,</i> The Vestal Tiger-moth] <br><br>"
+		+ "Just because she's fluffy, doesn't mean you can all of a sudden hug her. <br>"
+		+ "Happens more often than you'd think..",
+		artfight: "https://artfight.net/character/8079747.vesta",
+		size: 1.2,
+		images: [
+			"../ocAssets/vesta/vesta.png"
+		]
+	},
+	maple: {
+		name: "<span style=\"color: #FE88C5;\">Maple</span>",
+		desc: "[SPECIES: <i>Dryocampa rubicunda,</i> The Rosy Maple Moth] <br><br>"
+		+ "Kind of nervous, kind of fidgety",
+		artfight: "https://artfight.net/character/8079755.maple",
+		size: 1.2,
+		images: [
+			"../ocAssets/maple/maple.png"
+		]
+	},
+	carina: {
+		name: "<span style=\"color: #9B70AF;\">Carina</span>",
+		desc: "[SPECIES: <i>Scopula decorata,</i> The Middle Lace Border] <br><br>"
+		+ "That IS my card! How the fuck did you do that???!!!?",
+		artfight: "https://artfight.net/character/8079769.carina",
+		size: 1.2,
+		images: [
+			"../ocAssets/carina/carina.png",
+			"../ocAssets/carina/card.png"
+		]
+	},
+	crimson: {
+		name: "<span style=\"color: #F7066A;\">Crimson</span>",
+		desc: "[SPECIES: <i>Utetheisa pulchella,</i> The Crimson-Speckled Flunkey] <br><br>"
+		+ "allegedly dangerous.... <br>"
+		+ "don't worry about the blood, YOU HAVE NO PROOF OF ANY VIOLENT ALTERCATIONS",
+		artfight: "https://artfight.net/character/8079760.crimson",
+		size: 1,
+		images: [
+			"../ocAssets/crimson/crimson.png"
+		]
+	},
+	cinnamon: {
+		name: "<span style=\"color: #B60057;\">Cinnamon</span>",
+		desc: "[SPECIES: <i>Tyria jacobaeae,</i> The Cinnabar Moth] <br><br>"
+		+ "Cinnamon's kind of self-conscious about her hair and her wings and her face and her clothes and her personality and her.. You get the idea",
+		artfight: "https://artfight.net/character/8079779.cinnamon",
+		size: 1,
+		images: [
+			"../ocAssets/cinnamon/cinnamon.png"
+		]
+	},
+	silk: {
+		name: "<span style=\"color: #B60057;\">Silk</span>",
+		desc: "[SPECIES: <i>Hyalophora cecropia,</i> The Cecropia Moth] <br><br>"
+		+ "Her clothes are probably more expensive than you are..",
+		artfight: "https://artfight.net/character/8079792.silk",
+		size: 1.2,
+		images: [
+			"../ocAssets/silk/silk.png"
+		]
+	},
+	mallory: {
+		name: "<span style=\"color: #FFC92B;\">Mallory</span>",
+		desc: "[SPECIES: <i>Acherontia atropos,</i> The African Death's-Head Hawkmoth] <br><br>"
+		+ "She'll beat the shit out of you if you look at her the wrong way",
+		artfight: "https://artfight.net/character/8079774.mallory",
+		size: 1.2,
+		images: [
+			"../ocAssets/mallory/mallory.png"
+		]
+	},
+	belle: {
+		name: "<span style=\"color: #47CD6F;\">Belle</span>",
+		desc: "[SPECIES: <i>Graellsia isabellae,</i> The Spanish Moon Moth] <br><br>"
+		+ "If it looks like butterfly, flies like a butterfly and acts like a butterfly... is it a butterfly? <br>"
+		+ "<i>No.</i>",
+		artfight: "https://artfight.net/character/8079763.belle",
+		size: 1.2,
+		images: [
+			"../ocAssets/belle/belle.png"
+		]
+	},
 };
 
 window.addEventListener("load", () => {
