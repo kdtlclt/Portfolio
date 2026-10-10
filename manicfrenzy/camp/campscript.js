@@ -173,6 +173,7 @@ const ocs = {
 			"../ocAssets/vin/collector.png",
 			"../ocAssets/vin/selfie.png",
 			"../ocAssets/vin/sling.png",
+			"../ocAssets/vin/vinarch.png"
 		]
 	},
 	laria: {
@@ -519,6 +520,18 @@ const ocs = {
 			"../ocAssets/belle/belle.png"
 		]
 	},
+	toxin: {
+		name: "<span style=\"color: #BAFF29;\">Toxin</span>",
+		desc: "[SPECIES: Rappio] <br><br>"
+		+ "bleh <br><br>"
+		+ "A rare, corrosive type of elf that is immune to different types of poisonus material "
+		+ "and harmful radiation. <br><br>"
+		+ "Her tail makes bubbles appear around her.",
+		size: 1,
+		images: [
+			"../ocAssets/toxin/toxic.png"
+		]
+	}
 };
 
 window.addEventListener("load", () => {
