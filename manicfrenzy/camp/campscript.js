@@ -531,7 +531,39 @@ const ocs = {
 		images: [
 			"../ocAssets/toxin/toxic.png"
 		]
-	}
+	},
+	mist: {
+		name: "<span style=\"color: #B3DFF9;\">Mist</span>",
+		desc: "1 of 4 aerosol creatures I drew",
+		size: 1,
+		images: [
+			"../ocAssets/mist/mist.png"
+		]
+	},
+	soot: {
+		name: "<span style=\"color: #F3C009;\">Soot</span>",
+		desc: "1 of 4 aerosol creatures I drew",
+		size: 1,
+		images: [
+			"../ocAssets/soot/soot.png"
+		]
+	},
+	smoke: {
+		name: "<span style=\"color: #FBAC30;\">Smoke</span>",
+		desc: "1 of 4 aerosol creatures I drew",
+		size: 1,
+		images: [
+			"../ocAssets/smoke/smoke.png"
+		]
+	},
+	fog: {
+		name: "<span style=\"color: #FFFFFF;\">Fog</span>",
+		desc: "1 of 4 aerosol creatures I drew",
+		size: 1,
+		images: [
+			"../ocAssets/fog/fog.png"
+		]
+	},
 };
 
 window.addEventListener("load", () => {
