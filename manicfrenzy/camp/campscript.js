@@ -280,7 +280,7 @@ const ocs = {
 		]
 	},
 	suo: {
-		name: "[UNNAMED]",
+		name: "<span style=\"color: #b7a99b;\">Su</span>",
 		desc: "[SPECIES: Short-Eared Owl] <br><br>"
 		+ "I don't think she's interested...",
 		size: 1,
