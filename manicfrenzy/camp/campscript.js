@@ -564,6 +564,33 @@ const ocs = {
 			"../ocAssets/fog/fog.png"
 		]
 	},
+	voidkitty: {
+		name: "<span style=\"color: #BEEE62;\">[UNNAMED]</span>",
+		desc: "[SPECIES: Cat] <br><br>"
+		+ "Void kittymech that I haven't named yet",
+		size: 1.35,
+		images: [
+			"../ocAssets/void/void.png"
+		]
+	},
+	lynx: {
+		name: "<span style=\"color: #CBFFA2;\">[UNNAMED]</span>",
+		desc: "[SPECIES: Lynx] <br><br>"
+		+ "kittymech but different type of kitty",
+		size: 1.2,
+		images: [
+			"../ocAssets/lynx/lynx.png"
+		]
+	},
+	mace: {
+		name: "<span style=\"color: #606797;\">[UNNAMED]</span>",
+		desc: "[SPECIES: Cat] <br><br>"
+		+ "maced up",
+		size: 1.4,
+		images: [
+			"../ocAssets/mace/mace.png"
+		]
+	},
 };
 
 window.addEventListener("load", () => {
