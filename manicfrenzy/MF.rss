@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+	
+		<title>Manic Frenzy</title>
+		<link>https://manicfrenzy.neocities.org</link>
+		<description>For [NORMAL] thoughts only</description>
+		
+		<item>
+			<title>Plastic Mechs</title>
+			<link>https://manicfrenzy.neocities.org/brain/personal-brain/plastic-mechs/</link>
+			<description>Thoughts about building model kits</description>
+		</item>
+		<item>
+			<title>Painting Rocks</title>
+			<link>https://manicfrenzy.neocities.org/brain/personal-brain/painting-rocks/</link>
+			<description>A post about a bunch of rocks I painted</description>
+		</item>
+		<item>
+			<title>Posing Your Bots</title>
+			<link>https://manicfrenzy.neocities.org/brain/personal-brain/posing-your-bots/</link>
+			<description>A post about Transformers</description>
+		</item>
+		<item>
+			<title>EVIL</title>
+			<link>https://manicfrenzy.neocities.org/brain/personal-brain/evil/</link>
+			<description>I'm SO EVIL</description>
+		</item>
+		<item>
+			<title>Thought #2</title>
+			<link>https://manicfrenzy.neocities.org/brain/personal-brain/thought2/</link>
+			<description>The antivirus keeps detecting my own code as malware and removes it when I try run it :(</description>
+		</item>
+		<item>
+			<title>Surreal Exhibition</title>
+			<link>https://manicfrenzy.neocities.org/brain/personal-brain/surreal-exhibition/</link>
+			<description>Thoughts about a museum visit</description>
+		</item>
+		<item>
+			<title>Thought #1</title>
+			<link>https://manicfrenzy.neocities.org/brain/personal-brain/thought1/</link>
+			<description>Introduction to the Personal Brain</description>
+		</item>
+		
+	</channel>
+</rss>
