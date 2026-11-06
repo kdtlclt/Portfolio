@@ -5,6 +5,7 @@
 		<title>Manic Frenzy</title>
 		<link>https://manicfrenzy.neocities.org</link>
 		<description>For [NORMAL] thoughts only</description>
+		<!-- RSS feed for Manic Frenzy. This only include new content and major updates to the site. No tiny fixes etc. -->
 		
 		<item>
 			<title>Plastic Mechs</title>
