@@ -535,6 +535,7 @@ const ocs = {
 	mist: {
 		name: "<span style=\"color: #B3DFF9;\">Mist</span>",
 		desc: "1 of 4 aerosol creatures I drew",
+		artfight: "https://artfight.net/character/11086241.mist",
 		size: 1,
 		images: [
 			"../ocAssets/mist/mist.png"
@@ -543,6 +544,7 @@ const ocs = {
 	soot: {
 		name: "<span style=\"color: #F3C009;\">Soot</span>",
 		desc: "1 of 4 aerosol creatures I drew",
+		artfight: "https://artfight.net/character/11086244.soot",
 		size: 1,
 		images: [
 			"../ocAssets/soot/soot.png"
@@ -551,6 +553,7 @@ const ocs = {
 	smoke: {
 		name: "<span style=\"color: #FBAC30;\">Smoke</span>",
 		desc: "1 of 4 aerosol creatures I drew",
+		artfight: "https://artfight.net/character/11086246.smoke",
 		size: 1,
 		images: [
 			"../ocAssets/smoke/smoke.png"
@@ -559,6 +562,7 @@ const ocs = {
 	fog: {
 		name: "<span style=\"color: #FFFFFF;\">Fog</span>",
 		desc: "1 of 4 aerosol creatures I drew",
+		artfight: "https://artfight.net/character/11086256.fog",
 		size: 1,
 		images: [
 			"../ocAssets/fog/fog.png"
