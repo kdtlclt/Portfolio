@@ -527,6 +527,7 @@ const ocs = {
 		+ "A rare, corrosive type of elf that is immune to different types of poisonus material "
 		+ "and harmful radiation. <br><br>"
 		+ "Her tail makes bubbles appear around her.",
+		artfight: "https://artfight.net/character/11087312.toxin",
 		size: 1,
 		images: [
 			"../ocAssets/toxin/toxic.png"
@@ -569,9 +570,10 @@ const ocs = {
 		]
 	},
 	voidkitty: {
-		name: "<span style=\"color: #BEEE62;\">[UNNAMED]</span>",
+		name: "<span style=\"color: #BEEE62;\">Div</span>",
 		desc: "[SPECIES: Cat] <br><br>"
-		+ "Void kittymech that I haven't named yet",
+		+ "heavily armed void",
+		artfight: "https://artfight.net/character/11087236.div",
 		size: 1.35,
 		images: [
 			"../ocAssets/void/void.png"
@@ -581,6 +583,7 @@ const ocs = {
 		name: "<span style=\"color: #CBFFA2;\">[UNNAMED]</span>",
 		desc: "[SPECIES: Lynx] <br><br>"
 		+ "kittymech but different type of kitty",
+		artfight: "https://artfight.net/character/11087304.lynx-mech",
 		size: 1.2,
 		images: [
 			"../ocAssets/lynx/lynx.png"
@@ -590,6 +593,7 @@ const ocs = {
 		name: "<span style=\"color: #606797;\">[UNNAMED]</span>",
 		desc: "[SPECIES: Cat] <br><br>"
 		+ "maced up",
+		artfight: "https://artfight.net/character/11087309.mace",
 		size: 1.4,
 		images: [
 			"../ocAssets/mace/mace.png"
