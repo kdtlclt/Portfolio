@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-	
 		<title>Manic Frenzy</title>
 		<link>https://manicfrenzy.neocities.org</link>
 		<description>For [NORMAL] thoughts only</description>
 		<!-- RSS feed for Manic Frenzy. This only include new content and major updates to the site. No tiny fixes etc. -->
 		
+		<item>
+			<title>test</title>
+			<description>test</description>
+			<pubDate>17 Aug 2026 12:00:00 +0000</pubDate>
+		</item>
 		<item>
 			<title>Plastic Mechs</title>
 			<link>https://manicfrenzy.neocities.org/brain/personal-brain/plastic-mechs/</link>
@@ -49,6 +53,6 @@
 			<description>Introduction to the Personal Brain</description>
 			<pubDate>29 Aug 2025 12:00:00 +0000</pubDate>
 		</item>
-		
+		<atom:link href="https://manicfrenzy.neocities.org/MF.rss" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

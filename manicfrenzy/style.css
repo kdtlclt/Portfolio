@@ -51,8 +51,12 @@ body {
 }
 
 .background-brain {
-	background-image: url("images/patternbrain.png");
-	background-size: 500px 500px;
+	background-image: linear-gradient(0deg,rgba(71, 4, 4, 0.71) 0%, rgba(67, 171, 126, 0) 100%),
+	url("images/brainpattern.png");
+	background-size: auto, 500px 500px;
+	background-repeat: no-repeat, repeat;
+	background-position: bottom, top left;
+background-attachment: fixed, scroll;
 }
 
 .background-grid {
