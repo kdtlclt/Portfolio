@@ -5,8 +5,15 @@
 		<link>https://manicfrenzy.neocities.org</link>
 		<atom:link href="https://manicfrenzy.neocities.org/MF.rss" rel="self" type="application/rss+xml" />
 		<description>For [NORMAL] thoughts only</description>
-		<!-- RSS feed for Manic Frenzy. This only include new content and major updates to the site. No tiny fixes etc. -->
+		<!-- RSS feed for Manic Frenzy. This will only include new content and major updates to the site. No tiny fixes etc. -->
 		
+		<item>
+			<title>Really Simple Syndication</title>
+			<link>https://manicfrenzy.neocities.org/brain/personal-brain/rss/</link>
+			<guid>https://manicfrenzy.neocities.org/brain/personal-brain/rss/</guid>
+			<description>Introduction to RSS</description>
+			<pubDate>25 Nov 2026 09:27:00 +0200</pubDate>
+		</item>
 		<item>
 			<title>Plastic Mechs</title>
 			<link>https://manicfrenzy.neocities.org/brain/personal-brain/plastic-mechs/</link>

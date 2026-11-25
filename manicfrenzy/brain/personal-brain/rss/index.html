@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- RSS-->
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Salsa&family=Special+Elite&display=swap"
+		rel="stylesheet">
+		<link rel="icon" type="image/png" href="../../../images/favicon.ico">
+		<title>MF | Really Simple Syndication</title>
+	</head>
+	
+	<body class="background-brain">
+		<a href="../index.html" class="back-button">
+			<img src="../../../images/back.png" alt="Go Back">
+		</a>
+		
+		<div class="board-piece-big"> <!-- Reused from the about section -->
+			<div class="paper-wrapper-2">
+				<img src="../brainpaper.gif" class="paper-bg" alt="Brain Paper">
+								<div class="brain-content">
+				
+					<img src="title.png">
+					
+					<p>Hello internet content consumer.</p>
+					<p>I bet you just finished consuming your daily interweb 
+					content such as news headlines and videos off of Bluesky or 
+					Twitter or TikTok or some other social media platform.</p>
+					<p>May the all knowing Algorithm bless your feed with whatever 
+					it thinks is best for you.</p>
+					<p>I hope those articles were informative. 
+					I hope those videos were enjoyable and I HOPE THAT WE WOULD ALL 
+					WAKE UP AND STOP RELYING ON THE GAZILLIONDOLLARCOMPANYALGORITHMIC 
+					RECOMMENDATIONSYSTEMS THAT WILL DOOM US ALL. WE WILL SEE WHAT THEY WANT US TO SEE. 
+					WE WILL LEARN WHAT THEY WANT US TO LEARN. WE WILL CONSUME BASED ON THEIR RULES AND REGULATIONS.</p>
+					<p>And it's tiring...</p>
+					<p>But we're in luck because this issue was solved in the far far future of 1999! Let's talk about RSS.</p>
+					<p>All the blabbering aside, there's a good chance you already know about RSS since you're 
+					on someone's personal website. 
+					I'm writing this as a sort of an introduction to it in case someone doesn't know about it. 
+					(I just wanted an excuse to write something here for once)</p>
+					<br>
+					
+					<img src="waht.png">
+					<p>RSS is a way of getting blogposts, articles and things like that all in one place. 
+					This way you don't have to visit individual websites to find all the stuff you want to look at.</p>
+					<p>First you're going to need a feed reader (which is the app or website you use to actually read the content). 
+					There's plenty to choose from but it's going to look something like this:</p>
+					
+					<img src="commafeed.png">
+					
+					<p>(Ignore the fact that these are in Finnish.) This reader (CommaFeed) shows the website the article came from, the title and when it was posted. 
+					When I click on one I can see a description of what it contains.</p>
+					<img src="artikkeli.png">
+					<p>And if I want to read more, I can click on the "open link" button to see the whole article.</p>
+					<p>And that's the gist of it. I just use this to put a bunch of news in one place so 
+					I don't have to visit each and every website to find them.</p>
+					<br>
+					
+					<img src="settingup.png">
+					
+					<p>Okay if you actually want to stop being a slave to the algorithm and try this for yourself, 
+					it's very simple (for the most part).</p>
+					<p>Step 1: Get a reader.
+					<br>Doesn't matter which one. As long as you like it. I've used different ones on different devices.</p>
+					<p>The one I use the most right now is CommaFeed which is a browser based one. 
+					You can simply press the + button to add new feeds and they'll show up to the left side of your screen 
+					if you want to scroll them individually. (But I just tend to use the "All" option 
+					which puts everything on the same page.)</p><p>On my phone I have an app called Feeder 
+					(which works pretty much exactly the same way).</p>
+					<br>
+					
+					<p>Step 2: Subscribe to feeds.
+					<br>Feeds can usually be found from a button that looks like this:</p>
+					
+					<img src="logo.png" style="width: 20%;">
+					
+					<p>This will usually take you to list of links to all the RSS feeds the website has to offer. 
+					(Or just directly to one of them). You want to look for something like this:</p>
+					<img src="xml.png">
+					<br> (RSS Feed from rssboard.org)
+					
+					<p>This is what the reader will use to update your feed. It's just a bunch of information related 
+					to the individual articles written in XML. You don't have to read it, 
+					just copy the url of the page with the XML and add that to your reader.</p>
+					
+					<img src="adding.png">
+					
+					<p>So adding feeds is really easy. However, this part is still a bit tricky. 
+					RSS is not a very widely used option for most people so a lot of companies have 
+					their feed links hidden in some weird corner on their sites. It might take a while to find them. 
+					(If they even have one.)</p>
+					<p>A good example of this is YouTube which does support RSS for individual channels. 
+					It's just a pain to get them. Basically you have to go the channel page, right click and select 
+					"View page source" (or do ctrl+u) and then use ctrl+f to search for RSS which should lead you to the XML link.</p>
+					
+					<img src="yt.png">
+					
+					<p>No idea why they couldn't just add a button in the corner or smt to get it</p>
+					<br>
+					
+					<img src="myo.png">
+					<p>You may have noticed that some of my screenshots used the RSS feed for a website called "Manic Frenzy". 
+					Seems like a cool site. I wonder how the webmaster made one of those feed thingies.. 
+					OHWAIT that's this site! And I'm glad I wondered that for you because now I can tell you!</p>
+					<p>If you are a fellow websiter like so many of us are, you might want to consider making your own feed. 
+					This way if someone wants to know whenever there's new stuff for them to look at, they can just subscribe 
+					to your feed via their reader.</p>
+					<p>If you're a Neocities user like me, you actually already have one. Go to your profile and click the 
+					"Share" button and there should be a link to an RSS feed.</p><p>The issue with the built-in one is that 
+					every link has that lamedumbfucking title "[WEBSITE] has been updated" and this feed will include every update 
+					you make to the site, even if you don't want to have a separate announcement for it. (If it's something tiny like 
+					fixing a typo.)</p><p>Let's make our own!</p><p>This is pretty easy since XML is a markup language. It's really 
+					similar to HTML. Let's just make new file. Typical formats for feeds are .xml or .rss (Mine is MF.rss)</p>
+					<p>Here's a base for starting one:</p>
+					
+					<pre style="font-size: 0.65em; tab-size: 2;"><code>
+&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"&gt;
+	&lt;channel&gt;
+		&lt;title>&lt;/title&gt;
+		&lt;link>&lt;/link&gt;
+		&lt;atom:link href="" rel="self" type="application/rss+xml" /&gt;
+		&lt;description&gt;&lt;/description&gt;
+		
+		&lt;item&gt;
+			&lt;title&gt;&lt;/title&gt;
+			&lt;link&gt;&lt;/link&gt;
+			&lt;guid&gt;&lt;/guid&gt;
+			&lt;description&gt;&lt;/description&gt;
+			&lt;pubDate&gt;&lt;/pubDate&gt;
+		&lt;/item&gt;
+		
+	&lt;/channel&gt;
+&lt;/rss&gt;
+					</code></pre>
+					<p>So just like HTML, we have the opening and closing tags marked by the angle brackets<br> 
+					&lt;tag&gt;content&lt;/tag&gt; </p>
+					<p>The channel tag has your actual feed. You need to add:</p>
+					<ul>
+						<li>the title (name of your website)</li>
+						<li>link to your website</li>
+						<li>a description.</li>
+					</ul>
+					<p>This is general information about the feed, not the 
+					individual items!</p>
+					<p>The atom tag is recommended to make your feed work on a wider selection of readers. Just define 
+					href as a link to where your feed will be on your website<br><br> 
+					Example:<br> href="https://examplewebsite.kdt/feed.rss"</p>
+					
+					<br>
+					<p>The item tag will have the actual content that will show up in the reader.</p>
+					<p>You can add as many as you want but it's good to keep it at around 15 per feed or less.
+					This way only the new stuff will show up on the reader.</p>
+					
+					<ul>
+					<li>The title tag has the title of the content you want to show.</li><br>
+					<li>Link tag is the link to the content itself (article/blogpost/whatever)</li><br>
+					<li>Guid tag is an optional but recommended unique id for the content. It's used by some readers
+					to determine if the item is new. Easiest way to come 
+					up with something for this is to just put the link here again.</li><br>
+					<li>Description tag has a short description that will show up on the reader</li><br>
+					<li>pubDate has the publishing date for the item. It follows this format:
+					<br> DD MMM YYYY HH:MM:SS +0000
+					<ul style="font-size: 15px;"><li>Day is displayed with a number (01 or 1 etc)</li><br>
+					<li>Month uses 3-letter abbreviations (Jan, Feb, Mar) </li><br>
+					<li>Year is just the year (2026, 1999)</li><br>
+					<li>Time is set with the 24 hour clock (07:51:01, 22:22:22)</li><br>
+					<li>Last part is the time zone which can be written with the offset like +0200 or -0100 or with smt like GMT</li><br>
+					<li>Week days can optionally be added like this: <br>Wed, 25 Nov 2026 07:59:00 +0200</li>
+					</ul></li>
+					</ul>
+					
+					<p>These are some common tags to add to an item. If you want to add more information, check 
+					out the <a href="https://www.rssboard.org/rss-specification" target="_blank">RSS Advisory Board.</a> 
+					They also have a <a href="https://www.rssboard.org/rss-validator/" target="_blank">
+					tool for checking the validity of an RSS feed.</a></p>
+					
+					<p>After adding a few items, the RSS feed is now complete! 
+					Now you can add your own little orange button somewhere on your site. 
+					Just make sure to do it exactly like most news companies and
+					make it pretty much impossible to find!</p>
+					
+					<p>And while you're at it, you can also add 
+					<a href="https://manicfrenzy.neocities.org/MF.rss" target="_blank">my feed</a> to your reader if you want to see 
+					updates for the greatest website of [TIME].</p>
+					
+					<p>yah thatsit. thanksforreading</p>
+					
+					<p>[25th Nov. 2026]</p>
+					
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
